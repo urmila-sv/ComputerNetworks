@@ -1,0 +1,28 @@
+/*Enter these command in terminal and visualise*/
+
+1) ping
+
+This command is used to check the connectivity between two devices. It sends 
+packets of data to the target device and waits for a response. The ping command is useful for checking if a device is online, and to measure network latency and packet 
+loss.
+
+2) ipconfig 
+
+This command displays the IP address, subnet mask, and default gateway of 
+the network adapter on the device. It is useful for troubleshooting network connectivity issues.
+
+3) tracert 
+
+This command is used to trace the path that packets take from the device to a 
+target device on the network. It displays the routers or devices that the packets pass through on their way to the destination.
+
+4) netstat
+
+This command displays the active network connections and the status of the network ports on the device. It is useful for troubleshooting network issues and identifying any unauthorized network connections.
+
+5) nslookup 
+
+This command is used to look up the IP address associated with a domain 
+name or vice versa. It is useful for troubleshooting DNS issues and verifying DNS configurations.
+
+
