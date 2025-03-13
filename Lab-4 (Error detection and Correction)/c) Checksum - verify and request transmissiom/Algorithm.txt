@@ -1,0 +1,20 @@
+1. The client and server establish a connection.
+2. The client prepares the data to be sent in packets of a fixed size.
+3. For each packet, the client calculates the checksum using a suitable checksum 
+algorithm (e.g., CRC, Adler-32, etc.).
+4. The client includes the calculated checksum in the packet along with the data.
+5. The client sends the packet to the server.
+6. The server receives the packet.
+7. The server calculates the checksum of the received data using the same 
+algorithm used by the client.
+8. The server compares the calculated checksum with the checksum included in the 
+packet.
+9. If the checksums match, the server accepts the packet and processes the data.
+10. If the checksums do not match, the server requests retransmission of the 
+packet.
+11. The client receives the retransmission request from the server and resends the 
+packet.
+12. Steps 6-11 are repeated until the server receives a packet with a correct 
+checksum.
+13. Once all packets have been successfully received and processed by the server, 
+the client and server can terminate the connection.

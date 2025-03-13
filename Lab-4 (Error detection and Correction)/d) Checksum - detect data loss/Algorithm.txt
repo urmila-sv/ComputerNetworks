@@ -1,0 +1,10 @@
+1. The client program will prompt the user to enter the message to be sent.
+2. The client calculates the checksum of the message using a checksum algorithm 
+(such as CRC32).
+3. The client sends the message along with the checksum to the server.
+4. The server receives the message and extracts the checksum from the header.
+5. The server calculates the checksum of the received message.
+6. The server compares the received checksum with the calculated checksum.
+7. If the checksums match, the server accepts the message and processes it.
+8. If the checksums do not match, the server requests retransmission of the message.
+9. Steps 4-8 are repeated until a valid message with a matching checksum is received

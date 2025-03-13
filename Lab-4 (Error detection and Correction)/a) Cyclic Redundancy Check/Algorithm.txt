@@ -1,0 +1,22 @@
+1. Define the polynomial representation of the CRC scheme (in this case, X^5 +
+X^3 + 1).
+2. Define the original data sequence to be transferred.
+3. Initialize a variable to store the CRC remainder.
+4. Calculate the degree of the polynomial by finding the highest power of X.
+5. Append zeros to the original data sequence equal to the degree of the 
+polynomial.
+6. Perform the CRC division:
+While the data sequence is not empty:
+Take the most significant bit from the data sequence and store it as the 
+current bit.
+Shift the CRC remainder one bit to the left.
+XOR the CRC remainder with the polynomial if the current bit is 1.
+7. Remove the most significant bit from the data sequence.
+8. Append the CRC remainder to the original data sequence to obtain the 
+encoded data.
+9. Introduce an error in the transmitted data by flipping a bit.
+10. Detect the error:
+Perform the CRC division on the transmitted data.
+11. If the remainder is zero, no error is detected. Otherwise, an error is present.
+12. Print the original data, encoded data with error, transmitted data with error, 
+and the error detection status
